@@ -19,7 +19,6 @@ import {AngularFireModule} from '@angular/fire/compat'
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AuthService } from "./shared/services/auth.service";
 
 import { PosteosComponent } from './PAGES/posteos/posteos.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -47,7 +46,7 @@ import { HeaderComponent } from './COMPONENTS/header/header.component';
     AngularFireAuthModule,
     HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
