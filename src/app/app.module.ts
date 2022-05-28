@@ -21,7 +21,6 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AuthService } from "./shared/services/auth.service";
 
-import { SignInComponent } from './COMPONENTS/sign-in/sign-in.component';
 import { NuevoComponent } from './COMPONENTS/nuevo/nuevo.component';
 import { PosteosComponent } from './PAGES/posteos/posteos.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -35,7 +34,6 @@ import { HeaderComponent } from './COMPONENTS/header/header.component';
     HomeComponent,
     LoginComponent,
     PageNotFoundComponent,
-    SignInComponent,
     NuevoComponent,
     PosteosComponent,
     HeaderComponent,
