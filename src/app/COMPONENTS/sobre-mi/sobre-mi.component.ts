@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeComponent } from 'src/app/PAGES/home/home.component';
 import { CambioService } from 'src/app/SERVICES/cambio.service';
-import { FirestoredbService } from 'src/app/SERVICES/firestoredb.service';
 import { ProyectosdbService } from 'src/app/SERVICES/proyectosdb.service';
 
 @Component({
@@ -19,11 +18,9 @@ export class SobreMiComponent implements OnInit {
   constructor( 
     public cambio:CambioService,
     public home:HomeComponent,
-    public db:FirestoredbService,
     public pdb:ProyectosdbService) { }
 
   ngOnInit(): void {
-    this.db.mi.subscribe(p=>{this.sobremi=p})
     this.pdb.obtenerSobreMi().subscribe(p=>{this.listSobreMi=p})
     this.pdb.obtenerDuras().subscribe(p=>{this.listDuras=p})
     this.pdb.obtenerBlandas().subscribe(p=>{this.listBlandas=p})
