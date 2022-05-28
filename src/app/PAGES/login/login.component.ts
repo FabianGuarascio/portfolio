@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -6,7 +7,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
   @ViewChild("userName")
   userName!: ElementRef;
   @ViewChild("userPassword")
@@ -34,7 +35,7 @@ export class LoginComponent implements OnInit {
     if (respuesta != 'FAIL') {
       localStorage['token'] = respuesta;
       localStorage['email'] = datos.email;
-      window.location.href = 'https://fabianportafolio-fff8b.web.app/posteos'
+      this.router.navigate(['/posteos'])
     } else {
       alert("Las credenciales son incorrectas. Por favor intente nuevamente.");
     }
