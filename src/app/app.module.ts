@@ -15,8 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 
-import {AngularFireModule} from '@angular/fire/compat'
-import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
@@ -41,7 +39,6 @@ import { HeaderComponent } from './COMPONENTS/header/header.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
-    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
     HttpClientModule
