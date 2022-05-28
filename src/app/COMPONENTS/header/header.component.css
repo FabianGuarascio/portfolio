@@ -22,4 +22,11 @@ span{
     line-height: 4rem;
     margin-right: 1rem;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+span:hover{
+    transform: scale(1.1);
+    background-color: rgba(158, 179, 255, 0.393);
+    border-radius: 16px;
 }

@@ -3,7 +3,7 @@
     <div *ngIf="token; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
         <span routerLink="/posteos">Editar</span>
-        <span (click)="logout()">log out</span>
+        <span (click)="logout()">cerrar sesion</span>
     </ng-template>
     <ng-template #elseBlock>
         <mat-icon class="icon"  routerLink="/login">account_circle</mat-icon>
