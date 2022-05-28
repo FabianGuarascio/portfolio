@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeComponent } from 'src/app/PAGES/home/home.component';
 import { CambioService } from 'src/app/SERVICES/cambio.service';
-import { FirestoredbService } from 'src/app/SERVICES/firestoredb.service';
 import { ProyectosdbService } from 'src/app/SERVICES/proyectosdb.service';
 
 @Component({
@@ -16,7 +15,6 @@ export class ProyectosComponent implements OnInit {
   constructor(
     public home:HomeComponent,
     public cambio:CambioService,
-    public db:FirestoredbService,
     public pdb: ProyectosdbService
   ) {}
 
