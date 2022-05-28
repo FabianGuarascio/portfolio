@@ -21,9 +21,9 @@ export class SobreMiComponent implements OnInit {
     public pdb:ProyectosdbService) { }
 
   ngOnInit(): void {
-    this.pdb.obtenerSobreMi().subscribe(p=>{this.listSobreMi=p})
-    this.pdb.obtenerDuras().subscribe(p=>{this.listDuras=p})
-    this.pdb.obtenerBlandas().subscribe(p=>{this.listBlandas=p})
+      this.pdb.obtenerSobreMi().subscribe(p=>{this.listSobreMi=p})
+      this.pdb.obtenerDuras().subscribe(p=>{this.listDuras=p})
+      this.pdb.obtenerBlandas().subscribe(p=>{this.listBlandas=p})
     // para pensarlo, necesito que escuche si haycambio es ture o false y luego le ponga blur o se lo quite
     // pero con ngoninit solo puedo conseguir que se fije al inicio
     // talvez deba usar el input() para la comunicacion padre hijo

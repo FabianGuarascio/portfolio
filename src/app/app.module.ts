@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './PAGES/page-not-found/page-not-found.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -39,6 +40,7 @@ import { HeaderComponent } from './COMPONENTS/header/header.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
+    MatProgressSpinnerModule,
     AngularFirestoreModule,
     AngularFireAuthModule,
     HttpClientModule
