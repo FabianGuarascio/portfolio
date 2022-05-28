@@ -6,42 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProyectosdbService {
-
-  headerDict = {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
-    'Access-Control-Allow-Headers': 'Content-Type',
-  }
-  
-  requestOptions = {                                                                                                                                                                                 
-    headers: new Headers(this.headerDict), 
-  };
   rutaheroku="https://portfolio-argentina-program.herokuapp.com/"
-
-  //local
-  rutageneral="http://192.168.0.248:8080/"
-  rutalocal="http://192.168.0.248:8080/api/proyectos"
-  rutacrearlocal="http://192.168.0.248:8080/api/proyectos/crear"
-  rutaborrarlocal="http://192.168.0.248:8080/api/proyectos/"
-  
   rutaHabilidadesBlandas= this.rutaheroku+"api/habilidadesBlandas/"
   rutaHabilidadesDuras= this.rutaheroku+"api/habilidadesDuras/"
   rutaSobremi= this.rutaheroku+"api/sobremi/"
-
-
-
-
-  
-  
   //heroku
   ruta= this.rutaheroku+ "api/proyectos"
   rutaborrar= this.rutaheroku+ "api/proyectos/"
   rutacrear= this.rutaheroku+ "api/proyectos/crear"
-
-
-
   constructor(private http: HttpClient) { }
-
   obtener():Observable<any>{
     return this.http.get<any>(this.ruta)
   }
@@ -66,7 +39,6 @@ export class ProyectosdbService {
   crearSobreMi(objeto:any):Observable<any>{
     return this.http.post(this.rutaSobremi+"crear", objeto, {headers :{'Content-Type': 'application/json','Authorization': localStorage['token']}})
   }
-
   borrar(id:any):Observable<any>{
     return this.http.delete(this.rutaborrar + id, {headers :{'Content-Type': 'application/json','Authorization': localStorage['token']}})
   }

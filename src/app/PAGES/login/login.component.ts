@@ -1,7 +1,4 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { AuthService } from "../../shared/services/auth.service";
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,15 +6,13 @@ import { AuthService } from "../../shared/services/auth.service";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public authService: AuthService) { }
-
+  constructor() { }
   @ViewChild("userName")
   userName!: ElementRef;
   @ViewChild("userPassword")
   userPassword!: ElementRef;
   ngOnInit(): void {
   }
-
   async iniciarSesion() {
     let datos = {
                 email:"",
@@ -34,7 +29,6 @@ export class LoginComponent implements OnInit {
       },
       body: JSON.stringify(datos)
     });
-
     const respuesta = await request.text();
     console.log(respuesta)
     if (respuesta != 'FAIL') {
@@ -44,7 +38,5 @@ export class LoginComponent implements OnInit {
     } else {
       alert("Las credenciales son incorrectas. Por favor intente nuevamente.");
     }
-  
   }
-
 }
