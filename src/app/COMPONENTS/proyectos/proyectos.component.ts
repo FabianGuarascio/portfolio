@@ -21,10 +21,7 @@ export class ProyectosComponent implements OnInit {
   
 
   ngOnInit(): void {
-   this.pdb.obtener().subscribe(p=>{
-     this.lists=p;
-      console.log(p)
-    })
+      this.pdb.obtener().subscribe(p=>{this.lists=p;})
   }
 
 }

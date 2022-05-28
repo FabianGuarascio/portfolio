@@ -41,6 +41,29 @@ h2{
 mat-card-title{
     text-align: center;
 }
+::ng-deep .mat-spinner circle {   
+    stroke: #2310f7;
+}
+::ng-deep .segundo_spinner circle{
+    stroke: #ffffff;
+}
+
+.segundo_spinner{
+    z-index: -1;
+    transform: scale(1.015);
+}
+.tercer_spinner{
+    z-index: -1;
+    transform: scale(0.98);
+}
+mat-spinner{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 .container_proyectos::-webkit-scrollbar{
     width: 1vw;
 }
