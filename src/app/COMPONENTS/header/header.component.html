@@ -2,7 +2,6 @@
     <img src="\assets\images\logoArgentinaPrograma.png" alt="Argentina programa logo"  routerLink="/home" >
     <div *ngIf="token; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
-        <span>Fabian</span>
         <span routerLink="/posteos">Editar</span>
         <span (click)="logout()">log out</span>
     </ng-template>
