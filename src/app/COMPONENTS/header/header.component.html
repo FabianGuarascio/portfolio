@@ -1,0 +1,13 @@
+<div class="container">
+    <img src="\assets\images\logoArgentinaPrograma.png" alt="Argentina programa logo"  routerLink="/home" >
+    <div *ngIf="token; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+        <span>Fabian</span>
+        <span routerLink="/posteos">Editar</span>
+        <span (click)="logout()">log out</span>
+    </ng-template>
+    <ng-template #elseBlock>
+        <mat-icon class="icon"  routerLink="/login" >account_circle</mat-icon>
+    
+    </ng-template>
+</div>

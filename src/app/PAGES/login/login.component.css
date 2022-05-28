@@ -1,0 +1,36 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url("src\assets\images\mountain.jpg");
+    background-size: cover;
+
+    /* background: rgb(108,255,59);
+    background: -moz-linear-gradient(90deg, rgba(108,255,59,0.907236222125569) 0%, rgba(26,218,255,1) 66%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(108,255,59,0.907236222125569) 0%, rgba(26,218,255,1) 66%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(108,255,59,0.907236222125569) 0%, rgba(26,218,255,1) 66%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6cff3b",endColorstr="#00d4ff",GradientType=1);  */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 400px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgba(255, 255, 255, 0.149);
+    border-radius: 16px;
+}
+
+.back{
+    position: absolute;
+    z-index: 1;
+    filter: blur(200px);
+}
+.label{
+    width: 10em;
+}

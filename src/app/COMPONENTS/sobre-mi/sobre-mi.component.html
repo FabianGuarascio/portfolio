@@ -1,0 +1,27 @@
+<div class="containerMayor">
+    <div class="container">
+        <mat-icon (click)="cambio.quitar(home.$sobremi)">arrow_back</mat-icon>
+        <div class="container_subContainer">
+            <div>
+                <h2>{{sobremi[0].titulo}}</h2>
+            </div>
+            <div class="sobremi" *ngFor="let item of listSobreMi">
+                <p>{{item.sobremi}}</p>
+            </div>
+            <h2 class="h2duras">Habilidades Duras</h2>
+            <div class="duras" >
+                <div *ngFor="let item of listDuras" >
+                    <button class="button-54">{{item.habilidad}}</button> 
+                    <button class="button-54">{{item.dominio}}</button>
+                </div>
+            </div>
+            <h2 class="h2blandas">Habilidades Blandas</h2>
+            <div class="duras" >
+                <div *ngFor="let item of listBlandas">
+                    <button class="button-63">{{item.habilidad}}</button> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

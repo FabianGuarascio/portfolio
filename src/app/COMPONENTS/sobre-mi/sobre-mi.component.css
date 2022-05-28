@@ -1,0 +1,170 @@
+.containerMayor{
+    background: url("src\assets\images\mountain.jpg");
+    background-size: cover;
+    border-radius: 8px;
+    width: 95vw;
+    box-shadow: 2px 2px 2px 1px black;
+    height: 100%;
+    overflow-y: visible;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 255, 68, 0.897) rgba(4, 255, 0, 0);
+
+
+}
+.container{
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: 3s;
+    
+}
+h2,p{
+    color: white;
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.2rem;
+    height: 100%;
+}
+p{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+.container_subContainer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    
+
+}
+mat-icon{
+    cursor: pointer;
+    transform: scale(1.9) translateX(10px) translateY(10px);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 1px  black;
+}
+
+.sobremi{
+    background-color: #5a42f3d0;
+    padding: 0.5rem;
+    box-shadow: 0px 1px 2px black;
+    font-weight: 600;
+}
+.h2duras{
+    background-color: #000;
+    padding: 1rem;
+}
+
+.h2blandas{
+    background-color: #5B42F3;
+    border-radius: 6px;
+    padding: 1rem;
+}
+.duras{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.duras>div{
+    min-width: 287px;
+    display: flex;
+    justify-content: center;
+}
+.duras>div>button{
+    margin: 0.4rem;
+}
+
+
+
+@media (max-width:600px){
+.container_subContainer{
+    overflow-y: visible;
+    margin-bottom: 2rem;
+
+}
+.container{
+    overflow-y: visible;
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 255, 68, 0.897) rgba(4, 255, 0, 0);
+}
+
+p{
+    height: 100%;
+    text-align: center;
+}
+}
+
+
+
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: unset;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/*  */
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: unset;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}

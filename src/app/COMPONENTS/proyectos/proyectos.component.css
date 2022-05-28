@@ -1,0 +1,99 @@
+h2{
+    text-align: center;
+}
+.containerMayor{
+    background: url("src\assets\images\bosque.jpg");
+    background-size: cover;
+    border-radius: 8px;
+    width: 95vw;
+    box-shadow: 2px 2px 2px 1px black;
+    height: 100%;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 95vh;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+.container_proyectos{
+    height: 80%;
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: visible;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 255, 68, 0.897) rgba(4, 255, 0, 0);
+}
+mat-icon{
+    cursor: pointer;
+    transform: scale(1.9) translateX(10px) translateY(10px);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 1px  black;
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.1rem;
+    height: 3rem;
+}
+mat-card-title{
+    text-align: center;
+}
+.container_proyectos::-webkit-scrollbar{
+    width: 1vw;
+}
+.container_proyectos::-webkit-scrollbar-thumb{
+    background-color: rgba(4, 255, 0, 0.813);
+}
+.container_proyectos::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.proyecto{
+    background-color: aqua;
+    border-radius: 16px;
+}
+.thumbnail{
+    width: 15em;
+}
+.example-card {
+    max-width: 19.75em;
+    box-shadow: 4px 6px 1px 4px black;
+  }
+.matbtn{
+    position: relative;
+    left: 30%;
+    background-color: #4caf4f00; /* Green */
+    border: solid #4CAF50 1px ;
+    color: white;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+
+}
+
+.matbtn:hover {
+    background-color: #4CAF50; /* Green */
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+a:hover {
+    color: white;
+  }
+  
+  a:active {
+    color: rgb(0, 0, 0);
+  }
+  
+  a:visited {
+    color: black;
+  }

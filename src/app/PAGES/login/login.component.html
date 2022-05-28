@@ -1,0 +1,12 @@
+<div class="login">
+    <div class="container front">
+        <label for="" class="label"> Usuario
+            <input type="text" class="formControl" placeholder="Username" #userName required>
+        </label>
+        <label for="" class="label"> Password
+            <input type="password" class="formControl" placeholder="Password" #userPassword required>
+        </label>
+        <!-- <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)"> -->
+        <input type="button" class="btn btnPrimary" value="Log in" (click)="iniciarSesion()">
+    </div>
+</div>

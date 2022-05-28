@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "fabianportafolio-fff8b",
+    "portfolio": "fabianportafolio-fff8b"
+  },
+  "targets": {
+    "portafoliofabian-a9eb9": {
+      "hosting": {
+        "portfolio": [
+          "portafoliofabian-a9eb9"
+        ]
+      }
+    }
+  }
+}
