@@ -11,16 +11,18 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) { }
   token=localStorage.getItem('token')
   ngOnInit(): void {
+    console.log(this.router.url)
   }
 
   navegarHome(callback:any){
-    localStorage.clear()
+   
     callback()
   }
   logout(){
-    this.navegarHome(()=>{
-      this.router.navigate(['/home'])
-    })
-    
+    localStorage.clear()
+    this.router.navigate(['/home'])
+    if(this.router.url === "/home" || "/"){
+      location.reload()
+    }
   }
 }
