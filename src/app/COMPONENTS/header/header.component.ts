@@ -13,10 +13,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navegarHome(callback:any){
-   
-    callback()
-  }
   logout(){
     localStorage.clear()
     this.router.navigate(['/home'])
