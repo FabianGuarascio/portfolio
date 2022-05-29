@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+declare let alertify:any;
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,6 +15,10 @@ export class LoginComponent implements OnInit {
   @ViewChild("userPassword")
   userPassword!: ElementRef;
   ngOnInit(): void {
+  }
+  alertar(){
+    alertify.alert("mensaje ", "exito")
+
   }
   async iniciarSesion() {
     let datos = {
@@ -33,11 +39,12 @@ export class LoginComponent implements OnInit {
     const respuesta = await request.text();
     console.log(respuesta)
     if (respuesta != 'FAIL') {
+      alertify.success("Inicio de sesion exitoso")
       localStorage['token'] = respuesta;
       localStorage['email'] = datos.email;
       this.router.navigate(['/posteos'])
     } else {
-      alert("Las credenciales son incorrectas. Por favor intente nuevamente.");
+      alertify.alert("Las credenciales son incorrectas.", " Por favor intente nuevamente.");
     }
   }
 }
