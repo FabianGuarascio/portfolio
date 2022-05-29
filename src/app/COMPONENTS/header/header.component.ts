@@ -11,7 +11,6 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) { }
   token=localStorage.getItem('token')
   ngOnInit(): void {
-    console.log(this.router.url)
   }
 
   navegarHome(callback:any){
