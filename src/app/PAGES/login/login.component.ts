@@ -16,9 +16,11 @@ export class LoginComponent implements OnInit {
   userPassword!: ElementRef;
   ngOnInit(): void {
   }
-  alertar(){
-    alertify.alert("mensaje ", "exito")
-
+  inicioExitoso(respuesta:any,datos:any,callback:any){
+    alertify.success("Inicio de sesion exitoso")
+      localStorage['token'] = respuesta;
+      localStorage['email'] = datos.email;
+      callback()
   }
   async iniciarSesion() {
     let datos = {
@@ -27,7 +29,6 @@ export class LoginComponent implements OnInit {
               };
     datos.email = this.userName?.nativeElement.value;
     datos.password = this.userPassword?.nativeElement.value;
-  
     const request = await fetch('https://portfolio-argentina-program.herokuapp.com/api/login/', {
       method: 'POST',
       headers: {
@@ -37,12 +38,10 @@ export class LoginComponent implements OnInit {
       body: JSON.stringify(datos)
     });
     const respuesta = await request.text();
-    console.log(respuesta)
     if (respuesta != 'FAIL') {
-      alertify.success("Inicio de sesion exitoso")
-      localStorage['token'] = respuesta;
-      localStorage['email'] = datos.email;
-      this.router.navigate(['/posteos'])
+      this.inicioExitoso(respuesta,datos,()=>{
+        this.router.navigate(['/posteos'])
+      })
     } else {
       alertify.alert("Las credenciales son incorrectas.", " Por favor intente nuevamente.");
     }
