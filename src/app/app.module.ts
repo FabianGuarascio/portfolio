@@ -10,6 +10,8 @@ import { ContactoComponent } from './COMPONENTS/contacto/contacto.component';
 import { HomeComponent } from './PAGES/home/home.component';
 import { LoginComponent } from './PAGES/login/login.component';
 import { PageNotFoundComponent } from './PAGES/page-not-found/page-not-found.component';
+import { PosteosComponent } from './PAGES/posteos/posteos.component';
+import { HeaderComponent } from './COMPONENTS/header/header.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
@@ -19,9 +21,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
-import { PosteosComponent } from './PAGES/posteos/posteos.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent } from './COMPONENTS/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
