@@ -18,8 +18,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
@@ -41,8 +39,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    AngularFirestoreModule,
-    AngularFireAuthModule,
     HttpClientModule
   ],
   providers: [],
