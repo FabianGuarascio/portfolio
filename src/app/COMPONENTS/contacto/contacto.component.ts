@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { HomeComponent } from 'src/app/PAGES/home/home.component';
-import { CambioService } from 'src/app/SERVICES/cambio.service';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.css']
 })
-export class ContactoComponent implements OnInit {
+export class ContactoComponent {
+  @Output() closeWindowEvent = new EventEmitter<void>();
 
-  constructor(public home:HomeComponent, public cambio:CambioService) { }
-
-  ngOnInit(): void {
+  close(){
+    this.closeWindowEvent.emit();
   }
-
 }

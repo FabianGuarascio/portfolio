@@ -1,27 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { HomeComponent } from 'src/app/PAGES/home/home.component';
-import { CambioService } from 'src/app/SERVICES/cambio.service';
-import { ProyectosdbService } from 'src/app/SERVICES/proyectosdb.service';
-
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { projectsList } from './projectsList';
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
   styleUrls: ['./proyectos.component.css']
 })
-export class ProyectosComponent implements OnInit {
+export class ProyectosComponent {
+  @Output() closeWindowEvent = new EventEmitter<void>();
+  public lists = projectsList;
 
-  lists: any[] | undefined;
-
-  constructor(
-    public home:HomeComponent,
-    public cambio:CambioService,
-    public pdb: ProyectosdbService
-  ) {}
-
-  
-
-  ngOnInit(): void {
-      this.pdb.obtener().subscribe(p=>{this.lists=p;})
+  close(){
+    this.closeWindowEvent.emit();
   }
 
 }

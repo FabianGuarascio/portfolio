@@ -1,13 +1,24 @@
-<app-sobre-mi class="sobreMi" id="sobreMi"></app-sobre-mi>
-<app-proyectos class="proyectos" id="proyectos"></app-proyectos>
-<app-contacto class="contacto" id="contacto"></app-contacto>
-<app-header></app-header>
+<app-sobre-mi
+  class="sobreMi"
+  [ngClass]="{'show':cardToShow === 'about-me'}"
+  (closeWindowEvent)="cardToShow = null"
+  ></app-sobre-mi>
+<app-proyectos
+  class="proyectos"
+  [ngClass]="{'show':cardToShow === 'projects'}"
+  (closeWindowEvent)="cardToShow = null"
+  ></app-proyectos>
+<app-contacto
+  class="contacto"
+  [ngClass]="{'show':cardToShow === 'contact'}"
+  (closeWindowEvent)="cardToShow = null"
+  ></app-contacto>
 <div class="container">
     <h1>Fabian Guarascio</h1>
     <div class="spanContainer">
-        <span (click)="cambio.cambio($sobremi)">sobre mi</span>
-        <span (click)="cambio.cambio($proyectos)">proyectos</span>
-        <span (click)="cambio.cambio($contacto)">contacto</span>
+        <span (click)="addClassToShow('about-me')">sobre mi</span>
+        <span (click)="addClassToShow('projects')">proyectos</span>
+        <span (click)="addClassToShow('contact')">contacto</span>
     </div>
 </div>
 

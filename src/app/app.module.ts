@@ -8,10 +8,7 @@ import { SobreMiComponent } from './COMPONENTS/sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from './COMPONENTS/proyectos/proyectos.component';
 import { ContactoComponent } from './COMPONENTS/contacto/contacto.component';
 import { HomeComponent } from './PAGES/home/home.component';
-import { LoginComponent } from './PAGES/login/login.component';
 import { PageNotFoundComponent } from './PAGES/page-not-found/page-not-found.component';
-import { PosteosComponent } from './PAGES/posteos/posteos.component';
-import { HeaderComponent } from './COMPONENTS/header/header.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
@@ -20,6 +17,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 import { HttpClientModule } from '@angular/common/http';
+import { CloudsComponent } from './COMPONENTS/clouds/clouds.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,10 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProyectosComponent,
     ContactoComponent,
     HomeComponent,
-    LoginComponent,
     PageNotFoundComponent,
-    PosteosComponent,
-    HeaderComponent,
+    CloudsComponent,
   ],
   imports: [
     BrowserModule,

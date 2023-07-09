@@ -1,4 +1,4 @@
-.containerMayor{
+.upper_background{
     background: url("src\assets\images\telefonos.jpg");
     background-size: cover;
     border-radius: 8px;
@@ -35,7 +35,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.contacto_container{
+.contact_container{
     display: flex;
     flex-direction: column;
     justify-content: center;

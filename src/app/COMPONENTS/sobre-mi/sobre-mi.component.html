@@ -1,36 +1,13 @@
 <div class="containerMayor">
     <div class="container">
-        <mat-icon (click)="cambio.quitar(home.$sobremi)">arrow_back</mat-icon>
-        <div class="container_subContainer">
-            <div>
-                <h2>Desarrollador Web Jr. Autodidacta</h2>
-            </div>
-            <div *ngIf="!listSobreMi">
-                <mat-spinner></mat-spinner>
-            </div>
-            <div class="sobremi" *ngFor="let item of listSobreMi">
-                <p>{{item.sobremi}}</p>
-            </div>
-            <h2 class="h2duras">Habilidades Duras</h2>
-            <div *ngIf="!listDuras">
-                <mat-spinner></mat-spinner>
-            </div>
-            <div class="duras" >
-                <div *ngFor="let item of listDuras" >
-                    <button class="button-54">{{item.habilidad}}</button> 
-                    <button class="button-54">{{item.dominio}}</button>
-                </div>
-            </div>
-            <h2 class="h2blandas">Habilidades Blandas</h2>
-            <div *ngIf="!listBlandas">
-                <mat-spinner></mat-spinner>
-            </div>
-            <div class="duras" >
-                <div *ngFor="let item of listBlandas">
-                    <button class="button-63">{{item.habilidad}}</button> 
-                </div>
-            </div>
-
+        <mat-icon (click)="close()">arrow_back</mat-icon>
+        <div class="content">
+            <h2 class="css-text-mask">Angular developer </h2>
+            <p>
+              Actualmente trabajando como Front-end / fullstack en una empresa de ciberseguridad de Argentina.
+              Me encantan los perros , la inteligencia artifical y los teclado RGB.
+              Actualmente buscando desarrollarme mas en el area de back-end con sping-boot
+            </p>
         </div>
     </div>
 </div>
