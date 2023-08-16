@@ -2,32 +2,32 @@ import { Project } from "src/app/TYPES/project.model";
 
 export const projectsList: Project[] = [
   {
-    description: "Una calculadora hecha utilizando clases en Javascript y con la libreria P5.js para añadirle efectos de sonido",
-    image: "/assets/images/calculadora.jpeg",
-    link: "https://grand-stardust-b41bcd.netlify.app/",
-    subtitle: "Hecha con Javascript",
-    title: "Calculadora"
+    title: "Reusable Circular Graph",
+    subtitle: "An simple StandAlone graph for Angular",
+    description: "A circular graph to put in your project for a quick and easy data graph. It's customizable, it has transaparency, it is responsive and with a simple copy an paste you can use it in any Angular project",
+    image: "/assets/images/circular_graph.png",
+    link: "https://fabianguarascio.github.io/CircularGraph/"
   },
   {
-    description: 'Clon del famoso e-commerce "Amazon". Se encuentra hecho con Angular y esta subido el hosting a firebase como así tambien utiliza la autentificación de firebase. Todavía se encuentra en proceso de construcción el sitio',
+    title: 'Amazon Store Clone',
+    subtitle: 'Front End e-commerce',
+    description: 'Clone of a the famous e-commerce of Amazon. This site was succesfully made for my learning proccess of the front end framework with firebase integration',
     image: '/assets/images/clonDeAmazon.jpeg',
-    link: '/assets/images/clonDeAmazon.jpeg',
-    subtitle: 'tienda de e-commerce',
-    title: 'Clon de Amazon'
+    link: 'https://clonangular.web.app/',
   },
   {
-    description: 'Un simple contador hecho como proyecto de aprendizaje. Tiene un aspecto minimalista.',
-    image: '/assets/images/contador.jpeg',
-    link: 'https://fabianguarascio.github.io/contador.github.io/',
-    subtitle: 'Puede hasta hacer raizes cuadradas, muy util.',
-    title: 'Contador'
+    title: 'Scss RGB Keyboard',
+    subtitle: 'An Rgb keyboard using Scss',
+    description: 'An amazing challenge of doing a very complex animation using only scss and html taking advatage of the utiltys of Sass and Angular diectives.',
+    image: '/assets/images/rgb_keyboard.png',
+    link: 'https://fabianguarascio.github.io/RGB-Keyboard/home',
   },
   {
-    description: 'Es un clon de la pagina de e-commerce de compra gamer. El front end esta hecho con angular, conectada mediante una app hecha con java/SpringBoot a una base de datos Mysql para mostrar los productos',
+    title: '"Compra Gamer" clone e-commerce',
+    subtitle: 'Fullstack e-commerce made with Angular, SpringBoot & MySQL',
+    description: '"Compra gamer" is a renown tech e-commerce from Argentina. I did a clone of their page with backend capabilities. It has a MySQL database that is uploaded to heroku and the restfull aplication is made with SpringBoot ',
     image: '/assets/images/compraGamer.png',
     link: 'https://compragamerclon.web.app/',
-    subtitle: 'Hecha con Angular, SpringBoot y MySQL',
-    title: 'Clon de "compra gamer"'
   }
 
 ]
